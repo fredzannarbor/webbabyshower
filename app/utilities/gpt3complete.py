@@ -10,7 +10,7 @@ import uuid
 
 import openai
 
-openai_user_id_for_safety_tracking = os.environ['OPENAI_USER_ID_FOR_SAFETY_TRACKING']
+openai_user_id_for_safety_tracking = 6
 
 import pandas as pd
 
