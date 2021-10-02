@@ -2,3 +2,4 @@ flask-SQLAlchemy
 stripe
 python-docx
 openai
+flask_user
