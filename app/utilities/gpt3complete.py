@@ -26,7 +26,7 @@ from sqlalchemy.dialects import postgresql
 
 from .s2orc.doc2json.pdf2json.process_pdf import process_pdf_file
 
-
+openai_key = os.environ.get('OPENAI_KEY')
 
 def presets_parser(preset_filename):
     print(preset_filename)
