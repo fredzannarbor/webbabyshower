@@ -1,4 +1,4 @@
-flask_SQLAlchemy
+flask-SQLAlchemy
 re
 uuid
 python-docx
