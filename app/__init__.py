@@ -5,28 +5,11 @@ from datetime import datetime
 import os
 import subprocess
 
-""" from flask import Flask
-from flask_script import Manager """
-#import flask_sqlalchemy
+
+
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
-from flask_mail import Mail
-f""" rom flask_migrate import Migrate, MigrateCommand
-from flask_user import UserManager
-from flask_wtf.csrf import CSRFProtect
-from flask import flash
-import logging
-import stripe
-from flask_nav import Nav
-from flask_nav.elements import *
-from dtale.app import build_app
- """
 
-#from nimbleAI import nimbleshared
-
-
-# Instantiate Flask extensions
-#csrf = CSRFProtect()
 db = SQLAlchemy()
 mail = Mail()
 #migrate = Migrate()
