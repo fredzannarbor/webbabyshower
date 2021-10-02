@@ -11,7 +11,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 
 db = SQLAlchemy()
-mail = Mail()
+
 #migrate = Migrate()
 #nav = Nav()
 
@@ -26,8 +26,6 @@ def create_app(extra_config_settings={}):
     db.init_app(app)
 
 
-    # Setup Flask-Mail
-    mail.init_app(app)
 
   
     # Setup an error-logger to send emails to app.config.ADMINS
@@ -35,7 +33,6 @@ def create_app(extra_config_settings={}):
 
     # Setup Flask-User to handle user account related forms
     from .models.user_models import User
-    from .views.main_views import user_profile_page
 
 
 
@@ -43,11 +40,6 @@ def create_app(extra_config_settings={}):
     currentbranch = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", "HEAD"]).strip().decode()
     last_tag_message = subprocess.check_output(["git", "show", "-s", "--format=%B"]).strip().decode()
     versioninfo = version + ' ' + currentbranch + ' | ' + last_tag_message
-
-
-    @app.context_processor
-    def context_processor():
-        return dict(user_manager=user_manager)
 
     return app
 
