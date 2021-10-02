@@ -123,7 +123,7 @@ def presets_parser(preset_filename):
 
 def gpt3complete(preset_filename, prompt):
 
-    openai_user_id_for_safety_tracking = os.environ['OPENAI_USER_ID_FOR_SAFETY_TRACKING']
+    openai_user_id_for_safety_tracking = 6
 
     if prompt:
         override_prompt = prompt
