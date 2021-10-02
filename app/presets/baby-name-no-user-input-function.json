@@ -1,0 +1,25 @@
+[
+    {
+        "id": "2",
+        "preset_name" : "Push a Button, Get Some Baby Names",
+        "preset_author": "WebBabyShower.com",
+        "preset_active": "True",
+        "preset_launched": "20210610",
+        "preset_description": "This preset generates a couple of baby names.",
+        "preset_instructions": "Just press the button for a fresh set of name ideas.",
+        "pre_user_input": "",
+        "prompt": "This is a baby-name generator.\n###\nFERGUS.  Scottish.  Boy.  \"Man of strength.\"\n###\nRAVEN. Scandinavian. Girl. \"Intelligent.\"\n###\nIVY.  English. Girl.  Flowering vine.\n###\nLADY. English. Girl. \n###\nGREGORY. Greek. \"Watchful.\"\n###\n###\nOXYGEN. Modern. Unisex. The most reactive element, vital for life.\n",
+        "post_user_input": "",
+        "preset_pagetype": "NoUserInput",
+        "engine": "davinci",
+        "temperature": 0.7,
+        "max_tokens": 100,
+        "top_p": 1,
+        "fp": 0.7,
+        "pp": 0.7,
+        "stop_sequence": "['\"', '###']",
+        "echo_on": false,
+        "completion_heading": "Baby Name Ideas",
+        "presets_placeholder": "N/A"
+    }
+]

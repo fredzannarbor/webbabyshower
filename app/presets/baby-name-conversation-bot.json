@@ -1,0 +1,24 @@
+[
+    {
+        "id": "2",
+        "preset_name" : "Baby Name Conversation Bot",
+        "preset_author": "WebBabyShower.com",
+        "preset_active": "True",
+        "preset_launched": "20210610",
+        "preset_description": "Have a conversation about your baby's name!",
+        "preset_instructions": "Just type in your thoughts in simple conversational langauge.",
+        "preset_pagetype" : "Bot",
+        "pre_user_input": "You are a baby name bot.  You are helpful, friendly, creative, and well educated.  \n\nMe:",
+        "post_user_input": "",
+        "engine": "davinci-instruct-beta",
+        "temperature": 0.9,
+        "max_tokens": 60,
+        "top_p": 1,
+        "fp": 1,
+        "pp": 0,
+        "stop_sequence": "\n",
+        "echo_on": false,
+        "completion_heading": "Baby Names",
+        "presets_placeholder": "We are looking for cheerful, happy girl names."
+    }
+]

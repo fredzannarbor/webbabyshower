@@ -1,0 +1,24 @@
+[
+    {
+        "id": "2",
+        "preset_name" : "Baby Name Generator (by Attributes)",
+        "preset_author": "WebBabyShower.com",
+        "preset_pagetype": "UserPrompt",
+        "preset_active": "True",
+        "preset_launched": "20210610",
+        "preset_description": "Simple baby name generator powered by OpenAI's GPT-3 model gives you creative alternatives from a fresh perspective.",
+        "preset_instructions": "Enter a few 'attributes' like 'French, girl, flowers' or 'African, nobility'. Words may be in any order and need not be punctuated.",
+        "pre_user_input": "You are a baby name generating bot.  Create five random baby names based on the given attributes. Each name should be separated by a comma.\n\nAttributes: ",
+        "post_user_input": "Baby names: ",
+        "engine": "davinci-instruct-beta",
+        "temperature": 0.7,
+        "max_tokens": 60,
+        "top_p": 1,
+        "fp": 0.45,
+        "pp": 0,
+        "stop_sequence": "\n",
+        "echo_on": false,
+        "completion_heading": "Baby Name Ideas",
+        "preset_placeholder": "French, girl, flowers"
+    }
+]
