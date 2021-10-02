@@ -7,7 +7,7 @@ from flask_user import UserMixin
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed, FileRequired
 from wtforms import MultipleFileField
-from flask_uploads import UploadSet, DOCUMENTS
+
 from wtforms import StringField, SubmitField, validators, TextAreaField, SelectField, RadioField
 from app import db
 from sqlalchemy.sql import func
