@@ -4,3 +4,4 @@ python-docx
 openai
 flask_user
 email_validator
+BeautifulSoup
