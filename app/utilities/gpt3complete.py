@@ -6,7 +6,9 @@ from datetime import datetime, timedelta
 from pprint import pprint
 import stripe
 import os
+from os import environ
 import uuid
+import streamlit as st
 
 import openai
 
@@ -25,8 +27,8 @@ from sqlalchemy import func, extract
 from sqlalchemy.dialects import postgresql
 
 from .s2orc.doc2json.pdf2json.process_pdf import process_pdf_file
-
-openai_key = os.environ.get('OPENAI_KEY')
+ 
+os.environ.get('OPENAI_KEY') = st.secrets('OPENAI_KEY')
 
 def presets_parser(preset_filename):
     print(preset_filename)
