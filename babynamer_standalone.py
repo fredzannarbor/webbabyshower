@@ -2,8 +2,8 @@ from traceback import TracebackException
 import streamlit as st
 import datetime
 from app.utilities.gpt3complete import gpt3complete, presets_parser
-import re
-
+import  
+st.set_page_config(page_title='WebBabyShower.com', page_icon = "https://webbabyshower.com/wp-content/uploads/2017/12/cropped-WBS-logo-Yellow-300px-32x32.png", layout = 'wide', initial_sidebar_state = 'auto')
 
 def post_process_text(text):
     #all_patterns = [r'<br\s*?>', r'<br>', r'<li>', r'\n\s*\n', r'^-\s+', r'^-', r'\d+[)]'
@@ -39,7 +39,7 @@ def preset2streamlit(preset):
             st.markdown(presetdf['preset_instructions'].iloc[0])
             st.form_submit_button(label="Make a Baby (Name)") 
             response = gpt3complete(preset, prompt) # prompt is predefined by preset
-            st.write(response)
+            #st.write(response)
             #response_text = response['choices'][0]['text']
             response_text = post_process_text(response['choices'][0]['text'])
             completion_heading = f"##### {presetdf['completion_heading'].iloc[0]}"

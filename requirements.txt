@@ -1,0 +1,4 @@
+flask_SQLAlchemy
+re
+uuid
+python-docx
